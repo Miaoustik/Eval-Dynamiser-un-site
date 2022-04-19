@@ -1,6 +1,4 @@
 const newBtn = document.getElementById("newGame");
-//const roll = document.getElementById("roll");
-//const hold = document.getElementById("hold");
 const rolls = document.getElementsByName("roll");
 const holds = document.getElementsByName("hold");
 const player1Names = document.getElementsByName("label1");
