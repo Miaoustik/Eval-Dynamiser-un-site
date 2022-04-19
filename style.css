@@ -12,14 +12,18 @@ body {
 }
 #dot {
     top: -15px;
+    padding-left: 4em ;
 }
 #score1 , #score2{
     font-size: 3em;
     font-weight: 300;
 }
-img {
-    height: 100px;
-    width: 100px;
+#img {
+    aspect-ratio: 1/1;
+    /* width: 100%;
+    height: auto; */
+    max-width: 100px;
+    max-height: 100px;
 }
 .current {
     height: 45%;
