@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to right bottom, #a18a7f, #593625);
+  font-family: "Lato", sans-serif;
+}
+#white {
+  background: linear-gradient(to right, #f5f5f5 50%, #ffffff 50% 100%);
+}
+.img {
+  width: 100px;
+  height: 100px;
+}
+#dot {
+    top: -15px;
+}
+#score1 , #score2{
+    font-size: 3em;
+    font-weight: 300;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.current {
+    height: 45%;
+}
+.currentSpan, #current1, #current2 {
+    background-color: #de4949;
+}
