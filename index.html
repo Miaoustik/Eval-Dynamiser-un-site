@@ -21,7 +21,7 @@
     <div class="row m-0 h-100 justify-content-center position-relative" id="white">
       <div class="row justify-content-center">
         <div class="col-4">
-          <button class="border-0 bg-transparent d-flex m-auto ">
+          <button class="border-0 bg-transparent d-flex m-auto" id="newGame">
             <span class="text-danger d-flex align-self-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,9 +44,9 @@
       </div>
       <div class="row">
         <div class="col-6 text-nowrap text-center position-relative">
-          <span class="fs-2 d-none d-sm-block">PLAYER 1</span>
-          <span class="fs-6 d-block d-sm-none">PLAYER 1</span>
-          <span class="text-danger position-absolute pt-sm-3 pt-2 ps-sm-5 ms-0 ms-sm-4 ps-4" id="dot">
+          <span class="fs-2 d-none d-sm-block text-black" name="label1">PLAYER 1</span>
+          <span class="fs-6 d-block d-sm-none text-black" name="label1">PLAYER 1</span>
+          <span class="text-danger position-absolute pt-sm-3 pt-2 ps-sm-5 ms-0 ms-sm-4 ps-4" name="dot" id="dot1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -60,9 +60,9 @@
           </span>
         </div>
         <div class="col-6 text-nowrap text-center position-relative">
-          <span class="fs-2 d-none d-sm-block">PLAYER 2</span>
-          <span class="fs-6 d-block d-sm-none">PLAYER 2</span>
-          <span class="text-danger position-absolute pt-sm-3 pt-2 ps-sm-5 ms-0 ms-sm-4 ps-4" id="dot">
+          <span class="fs-2 d-none d-sm-block playerName text-opacity-25 text-black" name="label2">PLAYER 2</span>
+          <span class="fs-6 d-block d-sm-none playerName text-black text-opacity-25" name="label2">PLAYER 2</span>
+          <span class="text-danger position-absolute pt-sm-3 pt-2 ps-sm-5 ms-0 ms-sm-4 ps-4" style="display:none;" name="dot" id="dot2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -78,17 +78,17 @@
       </div>
       <div class="row">
         <div class="col-6 d-flex justify-content-center">
-          <span class="text-danger" id="score1">57</span>
+          <span class="text-danger" id="score1">0</span>
         </div>
         <div class="col-6 d-flex justify-content-center">
-          <span class="text-danger" id="score2">98</span>
+          <span class="text-danger" id="score2">0</span>
         </div>
       </div>
       <div class="row mb-3">
         <div class="col-6 d-flex justify-content-center current">
           <div class="row justify-content-center">
-            <span class="d-flex mt-2 justify-content-center w-75  currentSpan">current</span>
-            <span class="d-flex justify-content-center w-75  text-white fs-4" id="current1">42</span>
+            <span class="d-flex mt-2 justify-content-center w-75  currentSpan">CURRENT</span>
+            <span class="d-flex justify-content-center w-75  text-white fs-4" id="current1">0</span>
           </div>
         </div>
         <div class="col position-absolute ps-0 pe-4 ">
@@ -110,7 +110,7 @@
                   d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
                 />
               </svg> </span
-            ><span class="d-flex text-nowrap mx-3 d-none d-sm-block">ROLL DICE</span>
+            ><span class="d-flex text-nowrap mx-3 d-none d-sm-block" id="roll">ROLL DICE</span>
           </button>
           <button class="border-0 bg-transparent d-flex m-auto">
             <span class="text-danger d-flex align-self-center pb-2">
@@ -131,18 +131,19 @@
                   d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
                 />
               </svg> </span
-            ><span class="d-flex text-nowrap mx-3 d-none d-sm-block">HOLD</span>
+            ><span class="d-flex text-nowrap mx-3 d-none d-sm-block" id="hold">HOLD</span>
           </button>
         </div>
         <div class="col-6 d-flex justify-content-center current">
           <div class="row justify-content-center">
-            <span class="d-flex mt-2 justify-content-center  w-75 currentSpan">current</span>
-            <span class="d-flex justify-content-center  w-75 text-white fs-4" id="current2">42</span>
+            <span class="d-flex mt-2 justify-content-center  w-75 currentSpan">CURRENT</span>
+            <span class="d-flex justify-content-center  w-75 text-white fs-4" id="current2">0</span>
           </div>
         </div>  
       </div>
       <img src="./images/dice-6.png" alt="dice" class="shadow position-absolute top-50 start-50 translate-middle col-2 p-0" id="img">
     </div>
     <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

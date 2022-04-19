@@ -10,7 +10,7 @@ body {
   width: 100px;
   height: 100px;
 }
-#dot {
+#dot1, #dot2 {
     top: -15px;
     padding-left: 4em ;
 }
@@ -30,4 +30,7 @@ body {
 }
 .currentSpan, #current1, #current2 {
     background-color: #de4949;
+}
+.currentSpan {
+    font-size: 0.7em;
 }
